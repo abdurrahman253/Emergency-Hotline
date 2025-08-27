@@ -9,39 +9,372 @@
     <!--DaisyUi and tailwind CDN-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <!--Font-awesome CDN-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
-<body>
+<body class="bg-green-50">
     <!--Navbar starts here-->
-    <nav class="flex items-center justify-between gap-20 pt-4 mx-3 md:pt-6 md:px-16" >
+    <nav class="flex flex-col items-center justify-between gap-5 py-6 bg-white md:gap-20 md:flex-row md:px-16" >
         <!--left-->
-        <section class="flex items-center gap-3 md:gap-5">
+        <section class="flex items-center gap-6 md:gap-3 md:gap-5">
             
             <img src="./assets/logo.png" alt="" class="inline-block w-16">
             <h2 class="text-[#006747] font-extrabold md:text-xl">Emergency <br> Service</h2>
         </section>
 
        <!--Right-->
-        <section class="flex items-center gap-3 md:gap-5 ">
-          <div class="px-4 py-3 text-center bg-green-100 rounded-full md:px-8">
+        <section class="flex items-center gap-5 ">
+          <div class="py-3 bg-green-100 rounded-full px-7 md:px-10 ">
             <span class="pr-1 font-semibold">0</span>
-            <img src="./assets/heart.png" alt="" class="inline-block w-16 md:w-6 ">
+            <img src="./assets/heart.png" alt="" class="inline-block w-6 ">
           </div>
 
-          <div class="px-4 py-3 bg-green-100 rounded-full md:px-8">
+          <div class="px-5 py-3 bg-green-100 rounded-full md:px-8">
             <span class="pr-1 font-semibold ">100</span>
-            <img src="./assets/coin.png" alt="" class="inline-block w-6 ">
+            <img src="./assets/coin.png" alt="" class="inline-block w-6">
           </div>
 
-          <button class=" flex flex-col md:flex-row  md:font-semibold md:text-lg btn bg-[#00A63E] rounded-full py-9 md:py-6 px-5 md:px-9 text-white"> <span>2</span> Copy</button>
+          <button class="font-semibold text-lg btn bg-[#00A63E] rounded-full py-6 md:px-8 text-white"> <span>2</span> Copy</button>
         </section>
     </nav>
    
     <!--Hero Section Starts Here-->
-    <header class=" mt-8 py-5 flex flex-col items-center justify-center m-auto text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+    <header class=" py-5 flex flex-col items-center justify-center m-auto text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
         <img src="./assets/logo-dark.png" alt="" class="w-20 md:w-32"> 
         <h1 class="font-medium md:font-semibold text-2xl md:text-[2.5rem] text-white my-3">জরুরি সেবা ডিরেক্টরি</h1>
-        <p class="text-sm font-medium text-white md:text-xl md:font-semibold">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+        <p class="px-5 text-sm font-medium text-white md:text-xl md:font-semibold">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
     </header>
+    
+    <!--Main Section Starts Here-->
+    <main class="grid w-full grid-cols-1 px-5 mx-auto mt-6 md:mt-12 md:grid-cols-12 md:gap-8 md:w-11/12 "> 
+        <!--Left Side-->
+     <section class="col-span-9 mb-10 ">
+        <!--Card Box-->
+     <div id="card_box" class="grid w-full gap-8 md:grid-cols-3">
+       
+        <!--card (1)-->
+       <div class="p-6 bg-white shadow-lg rounded-xl">
+           <div class="flex items-center justify-between ">
+            <img src="./assets/emergency.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
+            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+           </div>
+            
+
+           <div class="mt-4">
+            
+           <div>
+            <h1 class="text-2xl font-extrabold text-black">জাতীয় জরুরি সেবা</h1>
+            <p class="text-xl text-gray-500">National Emergency</p>
+           </div>
+
+           <div class="my-6">
+            <h2 class="mb-4 text-3xl font-bold text-black">999</h2>
+            <span class="px-4 py-2 text-xl font-medium text-gray-500 bg-gray-100 rounded-full">সার্বজনীন</span>
+           </div>
+
+           <div class="mt-14">
+            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            
+            
+            <button class="px-5 font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12"> <i class="fa-solid fa-phone"></i> Call</button> 
+            
+           </div>
+
+           </div>
+       </div>
+
+
+        <!--card (2)-->
+       <div class="p-6 bg-white shadow-lg rounded-xl">
+           <div class="flex items-center justify-between ">
+            <img src="./assets/police.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
+            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+           </div>
+            
+
+           <div class="mt-4">
+            
+           <div>
+            <h1 class="text-2xl font-extrabold text-black">পুলিশ</h1>
+            <p class="text-xl text-gray-500">Police</p>
+           </div>
+
+           <div class="my-6">
+            <h2 class="mb-4 text-3xl font-bold text-black">999</h2>
+            <span class="px-4 py-2 text-xl font-medium text-gray-500 bg-gray-100 rounded-full">পুলিশ</span>
+           </div>
+
+           <div class="mt-14">
+            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            
+            
+            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            
+           </div>
+
+           </div>
+       </div>
+
+
+        <!--card (3)-->
+       <div class="p-6 bg-white shadow-lg rounded-xl">
+           <div class="flex items-center justify-between ">
+            <img src="./assets/fire-service.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
+            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+           </div>
+            
+
+           <div class="mt-4">
+            
+           <div>
+            <h1 class="text-2xl font-extrabold text-black">ফায়ার সার্ভিস</h1>
+            <p class="text-xl text-gray-500">Fire Service</p>
+           </div>
+
+           <div class="my-6">
+            <h2 class="mb-4 text-3xl font-bold text-black">999</h2>
+            <span class="px-4 py-2 text-xl font-medium text-gray-500 bg-gray-100 rounded-full">ফায়ার</span>
+           </div>
+
+           <div class="mt-14">
+            <button class= "px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            
+            
+            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black  md:px-12  px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            
+           </div>
+
+           </div>
+       </div>
+
+
+        <!--card (4)-->
+       <div class="p-6 bg-white shadow-lg rounded-xl">
+           <div class="flex items-center justify-between ">
+            <img src="./assets/ambulance.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
+            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+           </div>
+            
+
+           <div class="mt-4">
+            
+           <div>
+            <h1 class="text-2xl font-extrabold text-black">অ্যাম্বুলেন্স</h1>
+            <p class="text-xl text-gray-500">Ambulance</p>
+           </div>
+
+           <div class="my-6">
+            <h2 class="mb-4 text-3xl font-bold text-black">1994-999999</h2>
+            <span class="px-4 py-2 text-xl font-medium text-gray-500 bg-gray-100 rounded-full">স্বাস্থ্য</span>
+           </div>
+
+           <div class="mt-14">
+            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            
+            
+            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            
+           </div>
+
+           </div>
+       </div>
+
+
+        <!--card (5)-->
+       <div class="p-6 bg-white shadow-lg rounded-xl">
+           <div class="flex items-center justify-between ">
+            <img src="./assets/emergency.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
+            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+           </div>
+            
+
+           <div class="mt-4">
+            
+           <div>
+            <h1 class="text-2xl font-extrabold text-black">নারী ও শিশু সহায়তা</h1>
+            <p class="text-xl text-gray-500">Women & Child Helpline</p>
+           </div>
+
+           <div class="my-6">
+            <h2 class="mb-4 text-3xl font-bold text-black">109</h2>
+            <span class="px-4 py-2 text-xl font-medium text-gray-500 bg-gray-100 rounded-full">সহায়তা</span>
+           </div>
+
+           <div class="mt-14">
+            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            
+            
+            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            
+           </div>
+
+           </div>
+       </div>
+
+
+        <!--card (6)-->
+       <div class="p-6 bg-white shadow-lg rounded-xl">
+           <div class="flex items-center justify-between ">
+            <img src="./assets/logo.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
+            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+           </div>
+            
+
+           <div class="mt-4">
+            
+           <div>
+            <h1 class="text-2xl font-extrabold text-black">দুদক</h1>
+            <p class="text-xl text-gray-500">Anti-Corruption</p>
+           </div>
+
+           <div class="my-6">
+            <h2 class="mb-4 text-3xl font-bold text-black">106</h2>
+            <span class="px-4 py-2 text-xl font-medium text-gray-500 bg-gray-100 rounded-full">সরকারি</span>
+           </div>
+
+           <div class="mt-14">
+            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            
+            
+            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            
+           </div>
+
+           </div>
+       </div>
+
+
+        <!--card (7)-->
+       <div class="p-6 bg-white shadow-lg rounded-xl">
+           <div class="flex items-center justify-between ">
+            <img src="./assets/logo.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
+            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+           </div>
+            
+
+           <div class="mt-4">
+            
+           <div>
+            <h1 class="text-2xl font-extrabold text-black">বিদ্যুৎ বিভ্রাট</h1>
+            <p class="text-xl text-gray-500">Electricity Outage</p>
+           </div>
+
+           <div class="my-6">
+            <h2 class="mb-4 text-3xl font-bold text-black">16216</h2>
+            <span class="px-4 py-2 text-xl font-medium text-gray-500 bg-gray-100 rounded-full">বিদ্যুৎ</span>
+           </div>
+
+           <div class="mt-14">
+            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            
+            
+            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black  md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            
+           </div>
+
+           </div>
+       </div>
+
+
+        <!--card (8)-->
+       <div class="p-6 bg-white shadow-lg rounded-xl">
+           <div class="flex items-center justify-between ">
+            <img src="./assets/brac.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
+            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+           </div>
+            
+
+           <div class="mt-4">
+            
+           <div>
+            <h1 class="text-2xl font-extrabold text-black">ব্র্যাক</h1>
+            <p class="text-xl text-gray-500">Brac</p>
+           </div>
+
+           <div class="my-6">
+            <h2 class="mb-4 text-3xl font-bold text-black">16445</h2>
+            <span class="px-4 py-2 text-xl font-medium text-gray-500 bg-gray-100 rounded-full">এনজিও</span>
+           </div>
+
+           <div class="mt-14">
+            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            
+            
+            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            
+           </div>
+
+           </div>
+       </div>
+
+
+        <!--card (9)-->
+       <div class="p-6 bg-white shadow-lg rounded-xl">
+           <div class="flex items-center justify-between ">
+            <img src="./assets/Bangladesh-Railway.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
+            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+           </div>
+            
+
+           <div class="mt-4">
+            
+           <div>
+            <h1 class="text-2xl font-extrabold text-black">বাংলাদেশ রেলওয়ে</h1>
+            <p class="text-xl text-gray-500">Bangladesh Railway</p>
+           </div>
+
+           <div class="my-6">
+            <h2 class="mb-4 text-3xl font-bold text-black">163</h2>
+            <span class="px-4 py-2 text-xl font-medium text-gray-500 bg-gray-100 rounded-full">পরিবহন</span>
+           </div>
+
+           <div class="mt-14">
+            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            
+            
+            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            
+           </div>
+
+           </div>
+       </div>
+
+
+        
+       
+
+     </div>
+     </section>
+
+     <!--Right Side-->
+     <aside class="w-full max-w-md p-8 mx-auto bg-white shadow-lg md:p-6 md:col-span-3 rounded-xl">
+        
+        <div class="w-full">
+            <div class="flex items-center justify-between mx-auto">
+            <h2 class="text-xl font-semibold"><i class="fa-regular fa-clock transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] text-gray-400"></i>  Call History</h2>
+
+            
+            <button class="cursor-pointer py-3 font-semibold  text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black rounded-full hover:bg-gray-100 hover:text-black px-9"> Clear</button> 
+        </div>
+
+        
+
+        <div class="flex items-center justify-between p-4 mt-4 bg-gray-100 rounded-lg shadow-md">
+            <div>
+            <h4 class="text-lg font-medium text-black">জাতীয় জরুরি সেবা</h4>
+            <p class="text-lg font-normal text-gray-500">999</p>
+            </div>
+
+            <span class="text-lg font-normal text-black">11:36:58 AM</span>
+        </div>
+        </div>
+
+     </aside>
+
+
+    </main>
 
 </body>
 </html>
