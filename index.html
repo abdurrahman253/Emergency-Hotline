@@ -18,7 +18,7 @@
     <!--Navbar starts here-->
     <nav class="flex flex-col items-center justify-between gap-5 py-6 bg-white md:gap-20 md:flex-row md:px-16" >
         <!--left-->
-        <section class="flex items-center gap-6 md:gap-3 md:gap-5">
+        <section class="flex items-center gap-6 md:gap-5">
             
             <img src="./assets/logo.png" alt="" class="inline-block w-16">
             <h2 class="text-[#006747] font-extrabold md:text-xl">Emergency <br> Service</h2>
@@ -27,7 +27,7 @@
        <!--Right-->
         <section class="flex items-center gap-5 ">
           <div class="py-3 bg-green-100 rounded-full px-7 md:px-10 ">
-            <span class="pr-1 font-semibold">0</span>
+            <span class="pr-1 font-semibold heart_counter">0</span>
             <img src="./assets/heart.png" alt="" class="inline-block w-6 ">
           </div>
 
@@ -58,7 +58,7 @@
        <div class="p-6 bg-white shadow-lg rounded-xl">
            <div class="flex items-center justify-between ">
             <img src="./assets/emergency.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
-            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+            <i id="heart_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
            </div>
             
 
@@ -75,10 +75,10 @@
            </div>
 
            <div class="mt-14">
-            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            <button id="copy_button" class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
             
             
-            <button class="px-5 font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12"> <i class="fa-solid fa-phone"></i> Call</button> 
+            <button id="call_button" class="px-5 font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12"> <i class="fa-solid fa-phone"></i> Call</button> 
             
            </div>
 
@@ -90,7 +90,7 @@
        <div class="p-6 bg-white shadow-lg rounded-xl">
            <div class="flex items-center justify-between ">
             <img src="./assets/police.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
-            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+            <i id="heart_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
            </div>
             
 
@@ -107,10 +107,10 @@
            </div>
 
            <div class="mt-14">
-            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            <button id="copy_button" class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
             
             
-            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            <button id="call_button" class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
             
            </div>
 
@@ -122,7 +122,7 @@
        <div class="p-6 bg-white shadow-lg rounded-xl">
            <div class="flex items-center justify-between ">
             <img src="./assets/fire-service.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
-            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+            <i id="heart_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
            </div>
             
 
@@ -139,10 +139,10 @@
            </div>
 
            <div class="mt-14">
-            <button class= "px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            <button  id="copy_button" class= "px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
             
             
-            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black  md:px-12  px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            <button id="call_button" class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black  md:px-12  px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
             
            </div>
 
@@ -154,7 +154,7 @@
        <div class="p-6 bg-white shadow-lg rounded-xl">
            <div class="flex items-center justify-between ">
             <img src="./assets/ambulance.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
-            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+            <i id="heart_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
            </div>
             
 
@@ -171,10 +171,10 @@
            </div>
 
            <div class="mt-14">
-            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            <button id="copy_button" class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
             
             
-            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            <button id="call_button" class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
             
            </div>
 
@@ -186,7 +186,7 @@
        <div class="p-6 bg-white shadow-lg rounded-xl">
            <div class="flex items-center justify-between ">
             <img src="./assets/emergency.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
-            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+            <i id="heart_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
            </div>
             
 
@@ -203,10 +203,10 @@
            </div>
 
            <div class="mt-14">
-            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            <button id="copy_button"  class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
             
             
-            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            <button id="call_button" class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
             
            </div>
 
@@ -218,7 +218,7 @@
        <div class="p-6 bg-white shadow-lg rounded-xl">
            <div class="flex items-center justify-between ">
             <img src="./assets/logo.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
-            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+            <i id="heart_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
            </div>
             
 
@@ -235,10 +235,10 @@
            </div>
 
            <div class="mt-14">
-            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            <button  id="copy_button" class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
             
             
-            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            <button id="call_button" class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
             
            </div>
 
@@ -250,7 +250,7 @@
        <div class="p-6 bg-white shadow-lg rounded-xl">
            <div class="flex items-center justify-between ">
             <img src="./assets/logo.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
-            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+            <i id="heart_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
            </div>
             
 
@@ -267,10 +267,10 @@
            </div>
 
            <div class="mt-14">
-            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            <button id="copy_button" class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
             
             
-            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black  md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            <button id="call_button" class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black  md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
             
            </div>
 
@@ -282,7 +282,7 @@
        <div class="p-6 bg-white shadow-lg rounded-xl">
            <div class="flex items-center justify-between ">
             <img src="./assets/brac.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
-            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+            <i id="heart_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
            </div>
             
 
@@ -299,10 +299,10 @@
            </div>
 
            <div class="mt-14">
-            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            <button id="copy_button" class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
             
             
-            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            <button id="call_button" class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
             
            </div>
 
@@ -314,7 +314,7 @@
        <div class="p-6 bg-white shadow-lg rounded-xl">
            <div class="flex items-center justify-between ">
             <img src="./assets/Bangladesh-Railway.png" alt="" class="w-20 p-3 bg-red-200 rounded-3xl ">
-            <i id="herat_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
+            <i id="heart_icon" class="transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] fa-regular fa-heart "></i>
            </div>
             
 
@@ -331,10 +331,10 @@
            </div>
 
            <div class="mt-14">
-            <button class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
+            <button id="copy_button" class="px-5 py-2 text-xl text-gray-400 transition-all duration-500 ease-in-out bg-white border border-gray-300 rounded-lg cursor-pointer md:px-12 hover:bg-black hover:text-white"> <i class="fa-regular fa-copy"></i> Copy</button>
             
             
-            <button class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
+            <button id="call_button"  class="font-medium md:font-semibold cursor-pointer ml-2 py-2 text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black  rounded-lg hover:bg-gray-100 hover:text-black md:px-12 px-5"> <i class="fa-solid fa-phone"></i> Call</button> 
             
            </div>
 
@@ -349,32 +349,24 @@
      </section>
 
      <!--Right Side-->
-     <aside class="w-full max-w-md p-8 mx-auto bg-white shadow-lg md:p-6 md:col-span-3 rounded-xl">
+     <aside class="w-full max-w-md p-8 mx-auto mb-10 bg-white shadow-lg md:p-6 md:col-span-3 rounded-xl">
         
-        <div class="w-full">
+        <div id="card_container" class="w-full">
             <div class="flex items-center justify-between mx-auto">
             <h2 class="text-xl font-semibold"><i class="fa-regular fa-clock transition-all duration-500 ease-in-out cursor-pointer hover:text-[#00A63E] active:text-[#00A63E] text-gray-400"></i>  Call History</h2>
 
             
-            <button class="cursor-pointer py-3 font-semibold  text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black rounded-full hover:bg-gray-100 hover:text-black px-9"> Clear</button> 
-        </div>
-
-        
-
-        <div class="flex items-center justify-between p-4 mt-4 bg-gray-100 rounded-lg shadow-md">
-            <div>
-            <h4 class="text-lg font-medium text-black">জাতীয় জরুরি সেবা</h4>
-            <p class="text-lg font-normal text-gray-500">999</p>
+            <button id="clear_button" class="cursor-pointer py-3 font-semibold  text-xl text-white transition-all duration-500 ease-in-out bg-[#00A63E] border hover:border-black rounded-full hover:bg-gray-100 hover:text-black px-9"> Clear</button> 
             </div>
 
-            <span class="text-lg font-normal text-black">11:36:58 AM</span>
-        </div>
         </div>
 
      </aside>
 
 
     </main>
-
+   
+      
+    <script src="./index.js"></script>
 </body>
 </html>
