@@ -1,165 +1,159 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
+## Answer N0 - (1)
 
-### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
+### The difference between getElementById,getElementsByClassName and querySelector / querySelectorAll is:
 
-### 📅 No Deadline For 50 marks
-
-### 📅 Deadline For 30 marks: Any time after 29th August.
 
 ---
 
-## ✅ Main Requirements (50 Marks)
 
-### 1. Navbar
+ ### 1. getElementById:
 
-- **Website name & logo** on the left as Figma
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
+ It selects a single element by Its `id` and it returns a single DOM element or `null` if no element matches and we shouldn't select multiple elements with the same ID.
+ That's how it works :
 
----
+<div id="header">Hello</div>
 
-### 2. Hero Section
+<script>
+    const headerText = document.getElementById("header");
+console.log(header.textContent); // "Hello"
+</script>
 
-- **Background Gradient** in the Whole Section
-- **A Relevant Logo** at the top-center
-- **Section Title** in the center
-- **A Relevant Slogan** in the bottom Center
 
----
 
-### 2. Main Section
+### 2. getElementClassName:
 
-This Section will have layout as figma
+It selects all the elements that have a specific class and it returns a live HtmlCollection of elements and we can use multiple elements at once. it's not an array,but it look like array,thats why we can loop with `for` or  `for of` .
 
-<table border=1 width="100%" cellpadding="50">
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
- </tr>
- <tr>
-    <td colspan=9 >Card Section</td>
-    <td colspan=3>History Section</td>
- </tr>
-</table>
+That's how it works :
 
-### Emergency Hotline Section
+<div class="item">Hi</div>
+<div class="item">Hello</div>
 
-- **Show Minimum 6 cards**. Each card will contain:
-  - Icon or Image
-  - Relevant Name
-  - Relevant Name in English
-  - Hotline number for calling
-  - Category Badge
-  - 💗 icon at left
-  - **2 buttons** at the bottom: Copy and Call with icons as Figma
 
-### History Section
+<script>
+const items = document.getElementsByClassName("item");
+console.log(items.length); // 2
+for (let item of items) {
+  console.log(item.textContent); // "Hi"  "hello"
+}
 
-- **A white Background** in the whole section
-- **History Title with icon** at the top-left as Figma
-- **Clear History Button** at the top-right as Figma
+</script>
+
+
+
+### (3) & (4) querySelector and querySelectorAll:
+
+Both of them are used to select elements in CSS selectors. first one returns the first matching element or `null` and second one returns a static NodeList of all matches.
+they both are very flesible because they support any selector. for example :
+IDs (#id), classes (.class), tags(div) etc.
+That's how it works :
+
+
+<div class="item">Hi</div>
+<div class="item">Hello</div>
+
+
+<script>
+const firstItem = document.querySelector(".item"); // it will select the first element with class "item"
+const allItems = document.querySelectorAll(".item"); // it will select all the elements with class "item"
+</script>
+
 
 ---
 
-### 3. Responsiveness (5 Marks)
 
-- Website should be fully **responsive for mobile devices** (implementation up to you)
+## Answer N0 - (2)
 
----
+ ### how I create and insert a new element into the DOM:
 
-## Functionalities
 
-### 4. Heart Icons
+First of all i create a new element using `document.createElement()` in javascript.then i add content / attributes in it.then i call the parent where i want to add the new element and then i append the new element into the parent.
+for example : 
 
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
 
----
+<script>
+const newDiv = document.createElement("div"); // Creates a new div element
+newDiv.textContent = "Hello, I am a new div!"; // Sets the text content of the div
+newDiv.classList.add("box"); // Adds class "box" to the div
+newDiv.setAttribute("id", "myDiv"); // Sets id="myDiv" to the div
+const parentElement = document.body; // Selects the body as the parent
+parentElement.appendChild(newDiv); // Appends the new div to the body
+</script>
 
-### 5. Call Buttons
 
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
 
----
+--- 
 
-### 5. Call History Section
 
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
+## Answer N0 - (3) 
 
----
+### Event Bubbling :
 
-## Create Readme
 
-You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
+event bubbling is a type of event propagation where the event starts from the deepest target element and then bubbles up to its parent elements. For example, if you click on a button inside a div, the click event will first be handled by the button, then by the div, and so on up to the document root. This allows parent elements to respond to events that occur on their child elements.
+For example :
 
-### 6. Answer the following questions clearly:
+ <div id="parent_div">
+     parent div 
+     <button id="child_btn">
+         Click Me
+     </button>
+    </div>
 
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-2. How do you **create and insert a new element into the DOM**?
-3. What is **Event Bubbling** and how does it work?
-4. What is **Event Delegation** in JavaScript? Why is it useful?
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
+<script>
+  document.getElementById("child_btn").addEventListener("click", function(event) {
+    console.log("Child button clicked"); 
+  });
 
----
+  document.getElementById("parent_div").addEventListener("click", function() {
+    console.log("Parent div clicked");
+  });
 
-## 🧪 Challenges Part (10 Marks)
+  document.body.addEventListener("click", function() {
+    console.log("Body clicked");
+  });
+</script>
 
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
 
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
+In this example, if we click on the button, the console will log:
+"Child button clicked"
+"Parent div clicked"
+"Body clicked"
+demonstrating event bubbling from the button to the body.
 
-💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
 
-```bash
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step.
-```
 
-- After clicking on the **Call button**, the **exact time of the call** will be shown in the Call History section (3 Marks)
-
-💡Hint: Search Google with that below question
-
-```bash
-How to get current local time in js
-```
 
 ---
 
-## ⚙️ Technology Stack
 
-- HTML
-- CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
-- JavaScript ( Vanilla only. No Framework / Library Allowed )
 
----
 
-## 📌 Rules
+## Answer N0 - (4)
 
-- ✅ Minimum **5 meaningful commits** required
-- ❌ No Lorem Ipsum or dummy placeholder text. Use **relevant content only**
+### Event Delegation is:
 
----
 
-## 🔗 What to Submit
+  Event delegation is a technique in JavaScript where a single event listener is added to a parent element to manage events for its child elements. Instead of attaching individual event listeners to each child element, the parent element listens for events that bubble up from its children. This approach is efficient and reduces memory usage, especially when dealing with a large number of child elements or dynamically added elements.
 
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
+  It is useful for fewer event listeners and less memory and faster execution and it produces one handler clean code instead of many.
 
----
 
-# Let's Code and Achieve your Dream 🎯
+  ---
+
+  
+
+
+ ## Answer No - (5)
+
+
+ ### difference between preventDefault() and stopPropagation():
+
+
+ event.preventDefault() Stops the browser's default action like form submit and link navigation.It's used to prevent the default action of an event from being triggered. for example, if i have a link and i want to prevent it from navigating to a new page when clicked, I can use event.preventDefault() in the click event handler. 
+
+
+stopPropagation() method used to stop the propagation of an event from bubbling up or capturing down the DOM tree. When an event is triggered on an element, it first goes through the capturing phase (from the root to the target element) and then the bubbling phase (from the target element back up to the root). By calling stopPropagation() on an event object, I can prevent the event from propagating further in either direction. 
+
+
+that's the difference between stopPropagation() and event.preventDefault().
